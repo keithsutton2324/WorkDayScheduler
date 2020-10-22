@@ -4,3 +4,7 @@ $(".save").on("click",function(){
   console.log(value,time)
   localStorage.setItem(time,value)
 })
+for (var i=9; i<18; i++) {
+  var data = localStorage.getItem(i)
+  $(`#${i}-txt`).val(data)
+}
