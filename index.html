@@ -1,84 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./Assets/Css/style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-      <div class="row">
-        <div  class="time-blocks" >9 am</div>
-        <textarea id="9-txt" ></textarea>
-        <button class="save btn btn-primary" id="9-btn">Save</button>
-      </div>
-      <div class="row">
-        <div  class="time-blocks" >10 am</div>
-        <textarea id="10-txt" ></textarea>
-        <button class="save btn btn-primary" id="10-btn">Save</button>
-      </div>
-      <div class="row">
-        <div  class="time-blocks" >11 am</div>
-        <textarea id="11-txt" ></textarea>
-        <button class="save btn btn-primary" id="11-btn">Save</button>
-      </div>
-      <div class="row">
-        <div  class="time-blocks" >12 am</div>
-        <textarea id="12-txt" ></textarea>
-        <button class="save btn btn-primary" id="12-btn">Save</button>
-      </div>
-      <div class="row">
-        <div  class="time-blocks" >1 am</div>
-        <textarea id="13-txt" ></textarea>
-        <button class="save btn btn-primary" id="13-btn">Save</button>
-      </div>
-      <div class="row">
-        <div  class="time-blocks" >2 am</div>
-        <textarea id="14-txt" ></textarea>
-        <button class="save btn btn-primary" id="14-btn">Save</button>
-      </div>
-      <div class="row">
-        <div  class="time-blocks" >3 am</div>
-        <textarea id="15-txt" ></textarea>
-        <button class="save btn btn-primary" id="15-btn">Save</button>
-      </div>
-      <div class="row">
-        <div  class="time-blocks" >4 am</div>
-        <textarea id="16-txt" ></textarea>
-        <button class="save btn btn-primary" id="16-btn">Save</button>
-      </div>
-      <div class="row">
-        <div  class="time-blocks" >5 am</div>
-        <textarea id="17-txt" ></textarea>
-        <button class="save btn btn-primary" id="17-btn">Save</button>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./Assets/Css/style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container">
+    <!-- Timeblocks go here -->
+    <div class="row">
+      <div class="time-blocks">9 am</div>
+      <textarea id="9-txt"></textarea>
+      <button class="save btn btn-primary" id="9-btn">Save</button>
     </div>
+    <div class="row">
+      <div class="time-blocks">10 am</div>
+      <textarea id="10-txt"></textarea>
+      <button class="save btn btn-primary" id="10-btn">Save</button>
+    </div>
+    <div class="row">
+      <div class="time-blocks">11 am</div>
+      <textarea id="11-txt"></textarea>
+      <button class="save btn btn-primary" id="11-btn">Save</button>
+    </div>
+    <div class="row">
+      <div class="time-blocks">12 am</div>
+      <textarea id="12-txt"></textarea>
+      <button class="save btn btn-primary" id="12-btn">Save</button>
+    </div>
+    <div class="row">
+      <div class="time-blocks">1 am</div>
+      <textarea id="13-txt"></textarea>
+      <button class="save btn btn-primary" id="13-btn">Save</button>
+    </div>
+    <div class="row">
+      <div class="time-blocks">2 am</div>
+      <textarea id="14-txt"></textarea>
+      <button class="save btn btn-primary" id="14-btn">Save</button>
+    </div>
+    <div class="row">
+      <div class="time-blocks">3 am</div>
+      <textarea id="15-txt"></textarea>
+      <button class="save btn btn-primary" id="15-btn">Save</button>
+    </div>
+    <div class="row">
+      <div class="time-blocks">4 am</div>
+      <textarea id="16-txt"></textarea>
+      <button class="save btn btn-primary" id="16-btn">Save</button>
+    </div>
+    <div class="row">
+      <div class="time-blocks">5 am</div>
+      <textarea id="17-txt"></textarea>
+      <button class="save btn btn-primary" id="17-btn">Save</button>
+    </div>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="./Assets/Js/script.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./Assets/Js/script.js"></script>
+</body>
+
 </html>
