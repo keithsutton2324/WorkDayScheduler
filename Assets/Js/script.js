@@ -5,7 +5,7 @@ $(".save").on("click", function () {
   localStorage.setItem(time, value)
 })
 var currentTime = moment()
-$("#currentDay").val(currentTime)
+$("#currentDay").text(currentTime)
 var currentDate = currentTime._d
 console.log(currentDate)
 var time = moment().hours()
